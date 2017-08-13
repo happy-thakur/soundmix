@@ -1,0 +1,63 @@
+{
+    "sound": [{
+            "name": "60s Shuffle Drumset 01.wav",
+            "length": "00:00:03"
+        },
+        {
+            "name": "80s Back Beat 01.wav",
+            "length": "00:00:03"
+        },
+        {
+            "name": "Accelerate Beat.wav",
+            "length": "00:00:07"
+        },
+        {
+            "name": "Acoustic Layers Beat 01.wav",
+            "length": "00:00:03"
+        },
+        {
+            "name": "Acoustic Layers Beat 03.wav",
+            "length": "00:00:04"
+        },
+        {
+            "name": "African King Ensemble 02.wav",
+            "length": "00:00:04"
+        },
+        {
+            "name": "Beyond Deep Beat.wav",
+            "length": "00:00:04"
+        },
+        {
+            "name": "Driving Kick Break.wav",
+            "length": "00:00:17"
+        },
+        {
+            "name": "Electro Topper 12.wav",
+            "length": "00:00:04"
+        },
+        {
+            "name": "Essential Drumset 01.wav",
+            "length": "00:00:02"
+        },
+        {
+            "name": "Freestyle Conga Topper.wav",
+            "length": "00:00:34"
+        },
+        {
+            "name": "Hard Funk Break.wav",
+            "length": "00:00:17"
+        },
+        {
+            "name": "Intrepid Beat.wav",
+            "length": "00:00:17"
+        },
+        {
+            "name": "Let's Roll Beat.wav",
+            "length": "00:00:17"
+        },
+        {
+            "name": "Military Roll Topper.wav",
+            "length": "00:00:04"
+        }
+    ]
+}

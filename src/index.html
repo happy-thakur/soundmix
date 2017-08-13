@@ -1,14 +1,80 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Soundmix</title>
-  <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Soundmix</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--extra  -->
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/semantic.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <!--extra ends  -->
+
+    <!-- Custom fonts for this template -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="../assets/css/freelancer.min.css">
+
+    <link href="../assets/css/grayscale.min.css" rel="stylesheet">
+
+    <base href="/">
+    <script>
+        var audioContext = new AudioContext();
+        var audioContext2 = new AudioContext();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
-  <app-root></app-root>
+    <app-root></app-root>
 </body>
+
+<!-- Bootstrap core JavaScript -->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/popper.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+<!-- Custom scripts for this template -->
+<script src="../assets/js/grayscale.min.js"></script>
+
+<script>
+    var rangeSlider = function() {
+        var slider = $('.range-slider'),
+            range = $('.range-slider__range'),
+            value = $('.range-slider__value');
+
+        slider.each(function() {
+
+            value.each(function() {
+                var value = $(this).prev().attr('value');
+                $(this).html(value);
+            });
+
+            range.on('input', function() {
+                $(this).next(value).html(this.value);
+            });
+        });
+    };
+
+    rangeSlider();
+</script>
+
 </html>

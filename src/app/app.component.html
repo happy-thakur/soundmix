@@ -1,20 +1,205 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo=">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="http://angularjs.blogspot.ca/">Angular blog</a></h2>
-  </li>
-</ul>
+<!-- Navigation -->
 
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <a class="navbar-brand" href="#page-top"><img src="../assets/img/SoundMix.png" alt="SoundMix" class="img-fluid" id="logo"></a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu <i class="fa fa-bars"></i>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">Mixer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#download">Future</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">About Us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Intro Header -->
+
+<header class="masthead" id="top-head" style="background-image: url('../assets/img/Soundmix.jpg');">
+    <div class="intro-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h1 class="brand-heading" id="branding">SoundMix</h1>
+                    <p class="intro-text" id="app-des">Free Web Based, Sound Mixer.
+                        <br>Play with Music.</p>
+
+                    <h2 id="subheading">Welcome to the Club :-)</h2>
+                    <a href="#about" class="btn btn-circle page-scroll">
+                        <i class="fa fa-angle-double-down animated"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Application -->
+
+<!-- Application -->
+
+<section id="about" class="content-section text-center">
+    <div class="container">
+
+        <h2 class="happ-heading" (click)="playIt()" *ngIf="allList !== undefined">Start Mixing</h2>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <!-- <h2>About Soundmix</h2>
+                    <p></p>-->
+
+                <div class="happ-container">
+                    <div class="one-disk">
+                        <img src="./../assets/../assets/img/disk/disk1.png" alt="">
+                        <div class="happ-pause">
+                            <i class="fa fa-pause-circle" aria-hidden="true" *ngIf="play['one']" (click)="toggle('one')"></i>
+                            <i class="fa fa-play-circle" aria-hidden="true" *ngIf="!play['one']" (click)="toggle('one')"></i>
+                        </div>
+                    </div>
+
+                    <div class="one-disk">
+                        <img src="./../assets/../assets/img/disk/disk1.png" alt="">
+                        <div class="happ-pause">
+                            <i class="fa fa-pause-circle" aria-hidden="true" *ngIf="play['two']" (click)="toggle('two')"></i>
+                            <i class="fa fa-play-circle" aria-hidden="true" *ngIf="!play['two']" (click)="toggle('two')"></i>
+                        </div>
+                    </div>
+
+
+
+                    <!-- <div class="left-option" [ngClass]="{'left-show': show['left'] }">
+                        <div class="happ-options">
+                            <ul *ngIf="allList !== undefined">
+                                <div *ngFor="let x of allList; let i = index">
+                                    <li *ngIf="i != right['no']" [style.color]="(left['no'] == i)? 'red' : 'blue'" (click)="changeSong('left', i, x)">
+                                        {{x['name']}}
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                        <i class="fa fa-angle-double-right" aria-hidden="true" (click)="show['left'] = !show['left']"></i>
+                    </div>
+                    <div class="right-option" [ngClass]="{'right-show': show['right'] }">
+                        <div class="happ-options">
+                            <ul *ngIf="allList !== undefined">
+                                <div *ngFor="let x of allList; let i = index">
+                                    <li *ngIf="i != left['no']" [style.color]="(right['no'] == i)? 'red' : 'blue'" (click)="changeSong('right', i, x)">
+                                        {{x['name']}}
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                        <i class="fa fa-angle-double-left" aria-hidden="true" (click)="show['right'] = !show['right']"></i>
+                    </div> -->
+                </div>
+
+                <!-- <div id="div-slider"><input id="slider" type="range" min="0" max="100" step="1" /> </div> -->
+                <div class="range-slider">
+                    <input class="range-slider__range" type="range" value="50" min="0" max="100">
+                    <span class="range-slider__value">0</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Future Functionality -->
+
+<section id="download" class="download-section content-section text-center" style="background: url(../../assets/img/downloads-bg.jpg) no-repeat center center scroll;">
+    <div class="container">
+        <div class="col-lg-8 mx-auto">
+            <h2 id="features">Upcoming Feautures of SoundMix</h2>
+            <p id="functionality">Scale and BPM modifications.<br>Choose custom music.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+
+<section id="contact" class="content-section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 id="team">Our Team</h2>
+                <!-- <p>Feel free to leave us a comment on the <a href="http://startbootstrap.com/template-overviews/grayscale/">Grayscale template overview page</a> on Start Bootstrap to give some feedback about this theme!</p>
+                    <ul class="list-inline banner-social-buttons">
+                        <li class="list-inline-item">
+                            <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/BlackrockDigital/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                        </li>
+                    </ul> -->
+                <!-- Portfolio Grid Section -->
+                <section id="portfolio">
+                    <div class="container">
+
+                        <div class="row">
+                            <div class="col-sm-6 portfolio-item">
+                                <div class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
+                                    <div class="caption">
+                                        <div class="caption-content">
+                                            <h3>Suryansh Singh</h3>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="../assets/img/Suryansh.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 portfolio-item">
+                                <div class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
+                                    <div class="caption">
+                                        <div class="caption-content">
+                                            <h3>Shourya Gupta</h3>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="../assets/img/Shourya.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 portfolio-item">
+                                <div class="portfolio-link" href="#portfolioModal3" data-toggle="modal">
+                                    <div class="caption">
+                                        <div class="caption-content">
+                                            <h3>Saurabh Verma</h3>
+
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="../assets/img/Saurabh.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 portfolio-item">
+                                <div class="portfolio-link" href="#portfolioModal3" data-toggle="modal">
+                                    <div class="caption">
+                                        <div class="caption-content">
+                                            <h3>Shivani Chaudhary</h3>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="../assets/img/Shivani.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Map Section -->
+<!-- <div id="map"></div> -->
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="container text-center">
+        <p>Made with <i class="heart icon" id="love"></i> by hashslash</p>
+    </div>
+</footer>

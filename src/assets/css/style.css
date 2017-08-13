@@ -1,0 +1,126 @@
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+.crumb {
+    height: 98vh;
+    width: 98%;
+    margin: 1vh 1% 1vh;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.8);
+}
+
+#top-container {
+    background: #403A3E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #BE5869, #403A3E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #BE5869, #403A3E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+}
+
+#mixer {
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#bottom-container {
+    background: #EFEFBB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D4D3DD, #EFEFBB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+#slider1 {
+    /* transform: rotate(90deg); */
+}
+
+#card-controls {
+    width: 100%;
+}
+
+#card1 {
+    margin: 0px auto 10px;
+}
+
+#card2 {
+    margin: 0px auto 10px;
+}
+
+#div-slider {
+    margin-top: 50px;
+}
+
+#mainNav {
+    background-color: #3C3B3F;  /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);   Chrome 10-25, Safari 5.1-6  */
+    /* background: linear-gradient(to right, #605C3C, #3C3B3F);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+  */
+
+}
+
+.imgnav {
+    size: 45%;
+}
+
+#logo {
+    margin-left: 10%;
+    width: 50%;
+}
+
+#navbarResponsive {
+    padding-bottom: 10px;
+    margin-right: 10%
+}
+
+#footer {
+    font-family: 'Varela Round', sans-serif;
+}
+
+#love {
+    color: red;
+}
+
+.caption-content {
+    height: 315px;
+    width: auto;
+}
+
+#top-head {
+    background-image: url("img/Soundmix.jpg")
+}
+
+#features {
+    font-family: 'Just Another Hand', cursive;
+    margin-top: -100px;
+    color: #000000;
+    font-stretch: -1;
+    font-weight: 500;
+}
+
+#functionality {
+    font-family: 'Just Another Hand', cursive;
+    margin-top: 150px;
+    color: black;
+    font-size: 4em;
+    text-align: center;
+    font-weight: 600;
+}
+
+#branding {
+    font-family: 'Just Another Hand', cursive;
+    font-size: 10em;
+}
+
+#team {
+    font-family: 'Just Another Hand', cursive;
+}
+
+#app-des {
+    font-family: 'Just Another Hand', cursive;
+    color: black;
+    font-size: 2.5em;
+}
+
+#subheading {
+    font-family: 'Just Another Hand', cursive;
+    color: black;
+    font-size: 3em;
+}
